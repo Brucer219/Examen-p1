@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lapin d'Veronike | Café y chocolate</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+	<header class="encabezado">
+		<div class="contenedor barra-superior">
+			<a class="marca" href="index.html">
+				Lapin <span>d'Veronike</span>
+			</a>
+
+			<nav class="navegacion-principal" aria-label="Navegación principal">
+				<a class="enlace-activo" href="index.html">Inicio</a>
+				<a href="about.html">Nosotros</a>
+				<a href="menu.html">Productos</a>
+				<a href="contact.html">Contacto</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero hero-portada seccion" id="inicio">
+			<div class="contenedor hero-contenido">
+				<div class="hero-texto">
+					<p class="eyebrow">
+						Café, chocolate y un poquito de magia rosa
+					</p>
+					<h1>Un apapacho en cada bocado.</h1>
+					<p class="texto-grande">
+						Postres hechos con cariño, ingredientes mexicanos y una personalidad muy nuestra.
+					</p>
+
+					<div class="grupo-botones">
+						<a href="#productos" class="boton">Ver productos</a>
+						<a href="contact.html" class="boton boton-secundario">
+							Haz tu pedido
+						</a>
+					</div>
+
+					<p class="ubicacion">Aguascalientes, México</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="seccion seccion-clara" id="historia">
+			<div class="contenedor dos-columnas">
+				<div>
+					<p class="eyebrow">Nuestra esencia</p>
+					<h2>Pequeños detalles, grandes antojos.</h2>
+				</div>
+
+				<p>
+					Lapin d'Veronike nace para convertir una pausa cualquiera en un momento especial.
+					Combinamos café mexicano, chocolate y creatividad para compartir algo rico y memorable.
+				</p>
+			</div>
+		</section>
+
+		<section class="seccion" id="productos">
+			<div class="contenedor">
+				<div class="encabezado-seccion">
+					<p class="eyebrow">Lo más querido</p>
+					<h2>Conoce nuestros favoritos</h2>
+					<a href="menu.html" class="enlace-flecha">Ver todo →</a>
+				</div>
+
+				<div class="tarjetas grid-3">
+					<article class="tarjeta">
+						<div class="icono" aria-hidden="true">☕</div>
+						<h3>Café tostado</h3>
+						<p>
+							Granos mexicanos seleccionados y tostados para acompañar tus mejores momentos.
+						</p>
+					</article>
+
+					<article class="tarjeta">
+						<div class="icono" aria-hidden="true">🍫</div>
+						<h3>Cola de conejo</h3>
+						<p>
+							Cereal crujiente cubierto con delicioso chocolate oaxaqueño.
+						</p>
+					</article>
+
+					<article class="tarjeta">
+						<div class="icono" aria-hidden="true">🎁</div>
+						<h3>Detalles especiales</h3>
+						<p>
+							Regalos dulces preparados con una presentación que también se disfruta.
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="seccion seccion-rosa fondo-hero3" id="experiencia">
+			<div class="contenedor dos-columnas alineado-centro">
+				<div>
+					<p class="eyebrow">Hecho para compartir</p>
+					<h2>Tu momento favorito empieza aquí.</h2>
+				</div>
+
+				<p>
+					Para una tarde tranquila, un regalo inesperado o ese antojo que no puede esperar.
+					Elige tu favorito y nosotros ponemos la magia.
+				</p>
+			</div>
+		</section>
+
+		<section class="seccion" id="opiniones">
+			<div class="contenedor opiniones">
+				<p class="eyebrow">Tu opinión nos importa</p>
+				<h2>Comparte el apapacho que te dimos</h2>
+
+				<form class="formulario-resena" action="#" method="post">
+					<div class="campo">
+						<label for="nombre-resena">Título</label>
+						<input
+							type="text"
+							id="nombre-resena"
+							name="titulo"
+							placeholder="Título de tu reseña"
+							required>
+					</div>
+
+					<div class="campo">
+						<label for="calificacion">Calificación</label>
+						<select id="calificacion" name="calificacion" required>
+							<option value="">Selecciona una calificación</option>
+							<option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+							<option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+							<option value="⭐⭐⭐">⭐⭐⭐</option>
+							<option value="⭐⭐">⭐⭐</option>
+							<option value="⭐">⭐</option>
+						</select>
+					</div>
+
+					<div class="campo">
+						<label for="reseña">Tu opinión</label>
+						<textarea
+							id="reseña"
+							name="resena"
+							placeholder="Escribe tu experiencia..."
+							required></textarea>
+					</div>
+
+					<div class="enviar">
+						<input
+							type="submit"
+							value="Publicar reseña"
+							class="boton">
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="seccion llamada-accion">
+			<div class="contenedor centrado">
+				<p class="eyebrow">Síguenos</p>
+				<h2>La magia también vive en redes.</h2>
+				<p>Descubre novedades, productos y momentos dulces.</p>
+
+				<div class="redes">
+					<a href="#" aria-label="Instagram">Instagram</a>
+					<a href="https://www.facebook.com/share/1BUBPeEyHr/" aria-label="Facebook">Facebook</a>
+					<a href="#" aria-label="TikTok">TikTok</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="contenedor footer-contenido">
+			<p>© 2026 Lapin d'Veronike</p>
+		</div>
+	</footer>
+</body>
+</html>
